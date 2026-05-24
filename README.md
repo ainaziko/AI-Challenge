@@ -10,7 +10,6 @@ the per-task folder for details.
 | # | Task | Folder | Key artifact |
 | - | --- | --- | --- |
 | 1 | Company leaderboard clone | [`task-1/`](./task-1) | Live page at `https://ainaziko.github.io/<repo>/` (see below) |
-| 2 | Event hosting platform on Lovable | [`task-2/`](./task-2) | [`PROMPT_PLAYBOOK.md`](./task-2/PROMPT_PLAYBOOK.md) + sample CSV |
 | 3 | n8n Telegram learning assistant | [`task-3/`](./task-3) | [`learning-bot.workflow.json`](./task-3/learning-bot.workflow.json) |
 | 4 | MCP Air-Traffic-Control server | [`task-4/`](./task-4) | Python MCP server (`python -m atc_mcp`) |
 
