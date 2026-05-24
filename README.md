@@ -60,81 +60,6 @@ Run: `cd task-4 && pip install -r requirements.txt && python -m atc_mcp`.
 
 ---
 
-## Pushing to GitHub
-
-You have a clean, ready-to-push tree. Here's the one-shot recipe:
-
-```bash
-# from inside the ai-challenge-2/ folder
-
-git init
-git add .
-git commit -m "AI Challenge 2: tasks 1–4"
-
-# create the repo on github.com first (public). Then:
-git branch -M main
-git remote add origin https://github.com/ainaziko/ai-challenge-2.git
-git push -u origin main
-```
-
-> Repo name suggestion: `ai-challenge-2`. If you prefer something else,
-> swap the URL above.
-
-## Enabling GitHub Pages for Task 1
-
-GitHub Pages serves a repo from a single folder, so we use a tiny shim to
-publish only the `task-1/` files at the root of the published site.
-
-### Option A — easiest, dedicated repo (recommended)
-
-1. Create a SECOND public repo named e.g. `leaderboard`.
-2. Copy the contents of `task-1/` (not the folder itself — its contents)
-   to the root of that repo.
-
-   ```bash
-   # from outside ai-challenge-2/
-   git clone https://github.com/ainaziko/leaderboard.git
-   cp ai-challenge-2/task-1/* leaderboard/
-   cd leaderboard
-   git add .
-   git commit -m "Leaderboard clone"
-   git push
-   ```
-3. On github.com → repo `leaderboard` → **Settings → Pages** → Source =
-   "Deploy from a branch", Branch = `main`, Folder = `/ (root)`. Save.
-4. Wait ~1 minute. URL: `https://ainaziko.github.io/leaderboard/`.
-
-### Option B — keep everything in the monorepo
-
-1. In the `ai-challenge-2` repo, copy `task-1/` to `docs/`:
-
-   ```bash
-   cp -r task-1/* docs/
-   git add docs/
-   git commit -m "Publish leaderboard to docs/ for GitHub Pages"
-   git push
-   ```
-2. github.com → repo `ai-challenge-2` → **Settings → Pages** → Source =
-   "Deploy from a branch", Branch = `main`, Folder = `/docs`. Save.
-3. URL: `https://ainaziko.github.io/ai-challenge-2/`.
-
-Either way, paste the final URL into the submission form.
-
-## What to put on the submission form
-
-Per the [submission form](https://forms.office.com/r/b4H97DZ2VE):
-
-- **Task 1 deployed URL**: `https://ainaziko.github.io/leaderboard/`
-  (Option A) or `https://ainaziko.github.io/ai-challenge-2/` (Option B).
-- **Task 1 GitHub repo**: same as the published Pages source.
-- **Task 2 deployed URL**: published Lovable URL (after running the
-  playbook).
-- **Task 2 GitHub repo**: `https://github.com/ainaziko/ai-challenge-2`
-  pointing at the `task-2/` folder (or a linked Lovable-synced repo if you
-  connect Lovable to GitHub).
-- **Task 3 GitHub repo + bot link**: repo URL + your `@<bot_name>` from
-  BotFather.
-- **Task 4 GitHub repo**: same monorepo, point reviewers at `task-4/`.
 
 ## Repository layout
 
@@ -149,11 +74,6 @@ ai-challenge-2/
 │   ├── styles.css
 │   ├── app.js
 │   └── data.js
-├── task-2/                         ← Lovable event platform (Task 2)
-│   ├── README.md
-│   ├── report.md
-│   ├── PROMPT_PLAYBOOK.md
-│   └── sample-rsvps-export.csv
 ├── task-3/                         ← n8n + Telegram learning bot (Task 3)
 │   ├── README.md
 │   ├── report.md
