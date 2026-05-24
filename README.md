@@ -28,21 +28,6 @@ to any AI tool — only annotated screenshots of the UI structure.
 
 Run locally: `cd task-1 && python3 -m http.server 8000`.
 
-## Task 2 — Lovable event platform (Meetly)
-
-A prompt-by-prompt build playbook for the event hosting and attendance
-platform required by the brief. Paste the prompts from
-[`task-2/PROMPT_PLAYBOOK.md`](./task-2/PROMPT_PLAYBOOK.md) into Lovable in
-order; each prompt is acceptance-criteria-driven so the build stays on rails.
-
-Includes:
-- A 14-prompt build script covering hosts, events, RSVP, waitlist, tickets,
-  QR codes, check-in, roles, dashboard, CSV export, gallery, feedback,
-  reporting, seed data, and a self-audit QA pass.
-- [`sample-rsvps-export.csv`](./task-2/sample-rsvps-export.csv) — a
-  representative file showing the exact export schema.
-- Targeted fix + recovery prompts for when Lovable gets stuck.
-
 ## Task 3 — n8n Telegram learning bot
 
 A single n8n workflow that turns Telegram into an AI learning assistant. The
