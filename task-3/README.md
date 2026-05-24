@@ -1,5 +1,11 @@
 # Task 3 — AI Learning Assistant (Telegram Bot)
 
+## Live bot
+
+**Try the bot:** [@graspItAIBot](https://t.me/graspItAIBot)
+
+The workflow runs on n8n Cloud and listens to Telegram via webhook. Send `/start` to the bot to begin, then `/learn <url>` to summarise any article and `/quiz` to test yourself on it.
+
 A Telegram bot that turns any URL into a structured summary and a
 multiple-choice quiz. Built as a single n8n workflow with two AI
 roles:
@@ -68,7 +74,3 @@ for the step-by-step (~8 minutes): create the bot in BotFather,
 sign up for n8n Cloud, import the workflow JSON, hook up Telegram
 + OpenAI credentials, publish.
 
-## Live bot
-
-The live deployed bot is referenced in the submission form. The
-workflow runs on n8n Cloud and listens to Telegram via webhook.
